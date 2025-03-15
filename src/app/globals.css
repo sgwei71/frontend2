@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+@font-face {
+    font-family: "UltraLight";
+    src: url("/fonts/NanumBarunGothicUltraLight.ttf");
+}
+@font-face {
+    font-family: "Light";
+    src: url("/fonts/NanumBarunGothicLight.ttf");
+}
+@font-face {
+    font-family: "Regular";
+    src: url("/fonts/NanumBarunGothic.ttf");
+}
+@font-face {
+    font-family: "Bold";
+    src: url("/fonts/NanumBarunGothicBold.ttf");
+}
+@font-face {
+    font-family: "GothicLight";
+    src: url("/fonts/SCDream3.otf");
+}
+@font-face {
+    font-family: "Gothic";
+    src: url("/fonts/SCDream5.otf");
+}
+@font-face {
+    font-family: "GothicBold";
+    src: url("/fonts/SCDream7.otf");
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
+}
+
+@media (min-width: 640px) {
+    body {
+        min-width: 1920px;
+        height: 1080px;
+    }
+}
+
+body > main {
+    height: calc(100vh - 67px);
+}
