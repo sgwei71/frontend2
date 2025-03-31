@@ -60,4 +60,3 @@ jobs:
             
             # 사용하지 않는 Docker 이미지 제거
             docker image prune -f
-        
