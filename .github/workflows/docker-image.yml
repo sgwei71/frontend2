@@ -1,4 +1,4 @@
-name: Frontend Docker Image CI/CD Pipeline
+name: Frontend2 Docker Image CI/CD Pipeline
 
 # main 브랜치에 push할 때마다 실행
 on:
@@ -33,8 +33,8 @@ jobs:
           # echo "${{ secrets.ENV }}" > ./src/env/.env
 
           # Docker 이미지를 빌드하고, 'latest' 태그를 붙여 Docker Hub에 푸시합니다.
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend:latest .
-          docker push ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend2:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend2:latest
 
       # 4단계: SSH를 통해 서버에 접속하여 애플리케이션 배포
       - name: SSH and Deploy
@@ -43,19 +43,20 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
+          port: 1022
           script: |
             # 최신 Docker 이미지를 미리 서버에 가져옵니다.
-            docker pull ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend:latest
+            docker pull ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend2:latest
             
             # 기존에 실행 중인 컨테이너가 있다면 중지하고 삭제합니다.
-            if docker ps -q -f name=frontend; then
-              docker stop frontend
-              docker wait frontend  # 컨테이너가 종료될 때까지 기다림
-              docker rm frontend    # 종료된 후 컨테이너 제거
+            if docker ps -q -f name=frontend2; then
+              docker stop frontend2
+              docker wait frontend2  # 컨테이너가 종료될 때까지 기다림
+              docker rm frontend2    # 종료된 후 컨테이너 제거
             fi
             
             # 새로운 컨테이너를 실행합니다.
-            docker run -d -e TZ=Asia/Seoul --restart always --name frontend -p 3000:3000 ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend:latest
+            docker run -d -e TZ=Asia/Seoul --restart always --name frontend2 -p 3001:3001 ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend:latest
             
             # 사용하지 않는 Docker 이미지 제거
             docker image prune -f
