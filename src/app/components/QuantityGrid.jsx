@@ -11,12 +11,7 @@ const QuantityGrid = ({ taskQuantity, vehicleQuantity, equipmentQuantity, transp
 
     return (
         <div className="w-[37%] h-full flex items-center justify-center text-white max-sm:w-full">
-            <div className="grid grid-cols-2 w-full gap-6 px-16 py-8 max-sm:p-4 max-sm:gap-4">
-                <Tile name="업무수량" value={taskQuantity} imgSrc="/업무수량.png" />
-                <Tile name="차량수량" value={vehicleQuantity} imgSrc="/차량수량.png" />
-                <Tile name="장비수량" value={equipmentQuantity} imgSrc="/장비수량.png" />
-                <Tile name="운송경로" value={transportRoute} imgSrc="/운송경로.png" isTransportRoute />
-            </div>
+
         </div>
     );
 };
