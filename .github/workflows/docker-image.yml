@@ -56,7 +56,7 @@ jobs:
             fi
             
             # 새로운 컨테이너를 실행합니다.
-            docker run -d -e TZ=Asia/Seoul --restart always --name frontend2 -p 3001:3001 ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend2:latest
+            docker run -d -e TZ=Asia/Seoul --restart always --name frontend2 -p 3002:3002 ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend2:latest
             
             # 사용하지 않는 Docker 이미지 제거
             docker image prune -f
