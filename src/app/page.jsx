@@ -283,7 +283,7 @@ export default function Home() {
                     {/*
                     <div className="bg-blue-950 w-full flex items-end overflow-visible">
                     */}
-                    <div className="bg-blue-950 w-full flex flex-col">
+                    <div className="bg-blue-950 w-full flex items-end overflow-visible">
                         {/* 
                         <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} />
 
