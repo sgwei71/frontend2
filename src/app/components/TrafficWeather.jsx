@@ -11,9 +11,13 @@ const status2Img = {
 
 const TrafficWeather = ({ trafficInfo, weather }) => {
     return (
-         <div className="w-[37%] h-full flex items-center justify-center text-white">
-            <div className="flex justify-center items-center w-full h-full space-x-6 px-16 py-8">
-                {/* 교통상황 및 날씨 제거됨 */}
+        <div className="w-[37%] h-full flex items-center justify-center text-white">
+            <div className="flex justify-center items-center w-full h-full px-16 py-8">
+                {/* 빈 공간을 유지하기 위한 임시 블럭 */}
+                <div className="w-full h-full border border-dashed border-white rounded-lg flex items-center justify-center">
+                    {/* 여기에 나중에 다른 내용 넣을 수 있음 */}
+                    <span className="text-xl text-white opacity-50">-</span>
+                </div>
             </div>
         </div>
     );

@@ -90,7 +90,11 @@ const Header = () => {
             </div>
             {/* 가운데 */}
             <div className="hidden sm:flex justify-center flex-1">
-                <span className="text-lg font-semibold">계정성 업무 전환</span>
+                <div className="bg-white/20 px-6 py-2 rounded-lg shadow-md">
+                    <span className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
+                        계정성 업무 전환
+                    </span>
+                </div>
             </div>
             {/* 우측 */}
             <div className="flex items-center  justify-start max-sm:justify-end space-x-4 max-sm:space-x-2 max-sm:w-full">
