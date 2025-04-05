@@ -289,12 +289,8 @@ export default function Home() {
                         <TrafficWeather trafficInfo={trafficInfo} weather={weather} />
                         */}
                         <div className="w-48 h-48 rounded-full bg-white shadow-inner flex items-center justify-center">
-                            <div className="text-center">
-                                <p className="text-4xl font-extrabold text-blue-600">75%</p>
-                                <p className="text-xl font-bold text-gray-800">정상</p>
-                            </div>
+                            <EntireProgress progress1={progress1} progress2={progress2} overallStatus={overallStatus} />
                         </div>
-                        <h2 className="text-white text-2xl font-gothic-bold mt-2">전체 진척률</h2>
                     </div>
 
                     {/* 공지/이슈 row */}
