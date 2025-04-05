@@ -89,9 +89,9 @@ const Header = () => {
                 </FormControl>
             </div>
             {/* 가운데 */}
-            <div className="w-[26%] flex items-center">
+            <div className="w-[20%] flex items-center">
                 <div className="w-bg-white/20 px-6 py-2 rounded-lg shadow-md">
-                    <span className="text-2xl w-40 sm:text-3xl font-bold tracking-tight text-white">
+                    <span className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
                         계정성 업무 시스템 전환
                     </span>
                 </div>
