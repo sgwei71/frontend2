@@ -281,9 +281,13 @@ export default function Home() {
                 <>
                     {/* 전체 진척률 row */}
                     <div className="bg-blue-950 w-full flex items-end overflow-visible">
-                        {/* <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} /> */}
+                        {/* 
+                        <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} />
+                        */}
                         <EntireProgress progress1={progress1} progress2={progress2} overallStatus={overallStatus} />
-                        {/* <TrafficWeather trafficInfo={trafficInfo} weather={weather} /> /*}
+                        {/*
+                        <TrafficWeather trafficInfo={trafficInfo} weather={weather} />
+                        */}
                     </div>
 
                     {/* 공지/이슈 row */}
