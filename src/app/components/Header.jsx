@@ -91,8 +91,8 @@ const Header = () => {
             {/* 가운데 */}
             <div className="w-[37%] flex items-center">
                 <div className="bg-white/20 px-6 py-2 rounded-lg shadow-md">
-                    <span className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-                        계정성 업무 시스템 전환 1234567890
+                    <span className="text-2xl w-40 sm:text-3xl font-bold tracking-tight text-white">
+                        계정성 업무 시스템 전환
                     </span>
                 </div>
             </div>
