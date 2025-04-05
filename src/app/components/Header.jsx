@@ -62,7 +62,7 @@ const Header = () => {
             <div className="flex items-center space-x-4 w-full sm:w-auto sm:space-x-8">
                 <Link href="/" passHref className="flex items-center space-x-2">
                     <img src="/logo.png" alt="Logo" className="h-6 sm:h-10 pb-1" /> {/* 로고 이미지 */}
-                    <h1 className="text-sm sm:text-xl font-bold">이전 프로젝트 관리시스템</h1>
+                    <h1 className="text-sm sm:text-xl font-bold"> 하남데이터센터이전 상황관리 시스템</h1>
                 </Link>
                 <FormControl>
                     <Select
@@ -87,10 +87,7 @@ const Header = () => {
                         ))}
                     </Select>
                 </FormControl>
-            </div>
-            {/* 가운데 */}
-            <div className="hidden sm:flex justify-center flex-1">
-                    <div className="bg-white/20 px-6 py-2 rounded-lg shadow-md">
+                <div className="bg-white/20 px-6 py-2 rounded-lg shadow-md">
                     <span className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
                         계정성 업무 전환
                     </span>
