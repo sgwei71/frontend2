@@ -31,7 +31,35 @@ const TrafficWeather = ({ trafficInfo, weather }) => {
                         </div>
                     </div>
                 </div>
-           </div>
+
+                {/* 날씨 */}
+                <div className="flex flex-col bg-blue-500 text-white font-gothic-bold shadow-lg rounded-lg w-[45%] h-full">
+                    <h2 className="text-center text-2xl p-4 text-shadow-md">진행사항2</h2>
+                    <div className="bg-[#3eabfe] w-full flex-1 flex items-center justify-center">
+                    <div className="w-full p-4 bg-[#1e4da7] rounded-b-lg text-xl font-gothic">
+                        <div className="flex justify-between items-center border-b border-black py-2">
+                            <span>사전작업2</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-black py-2">
+                            <span>서비스 차단2</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-black py-2">
+                            <span>데이터복제2</span>
+                        </div>
+                        <div className="flex justify-between items-center py-2">
+                            <span>서버 시작2</span>
+                        </div>
+                    </div>
+                        {/* <style jsx>{`
+                            .bg-image {
+                                background-image: url("/차량수량.png");
+                                background-size: cover;
+                                background-position: center;
+                            }
+                        `}</style> */}
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
