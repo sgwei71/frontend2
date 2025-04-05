@@ -290,8 +290,11 @@ export default function Home() {
                         <EntireProgress progress1={progress1} progress2={progress2} overallStatus={overallStatus} />
 
                         <TrafficWeather trafficInfo={trafficInfo} weather={weather} />
+                        
                         */}
+                            <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} />
                             <EntireProgress progress1={progress1} progress2={progress2} overallStatus={overallStatus} />
+                            <TrafficWeather trafficInfo={trafficInfo} weather={weather} />
                     </div>
 
                     {/* 공지/이슈 row */}
