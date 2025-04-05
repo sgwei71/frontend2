@@ -280,7 +280,10 @@ export default function Home() {
                 // DESKTOP
                 <>
                     {/* 전체 진척률 row */}
+                    {/*
                     <div className="bg-blue-950 w-full flex items-end overflow-visible">
+                    */}
+                    <div className="bg-blue-950 w-full flex flex-col">
                         {/* 
                         <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} />
 
