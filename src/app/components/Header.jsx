@@ -88,7 +88,10 @@ const Header = () => {
                     </Select>
                 </FormControl>
             </div>
-
+            {/* 가운데 */}
+            <div className="hidden sm:flex justify-center flex-1">
+                <span className="text-lg font-semibold">계정성 업무 전환</span>
+            </div>
             {/* 우측 */}
             <div className="flex items-center  justify-start max-sm:justify-end space-x-4 max-sm:space-x-2 max-sm:w-full">
                 {isAdmin === "true" && (
