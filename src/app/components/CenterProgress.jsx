@@ -19,11 +19,11 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
         <div className={"w-[50%] flex flex-col items-center rounded-lg p-4 max-sm:w-full max-sm:p-2 max-sm:my-1"}>
             <h2 className={`text-blue-900 text-4xl font-gothic-bold mb-4 self-start w-full max-sm:text-xl max-sm:mb-1 ${centerCode === '20' && 'sm:text-right'}`}>
                 {width >= 640 ? (<>
-                    {centerCode === '10' && '수지 진척률 '}
+                    {/* centerCode === '10' && '수지 진척률 ' */}
                     <span className="text-blue-600">{Math.floor(progress)}%</span>
-                    {centerCode === '20' && ' 하남 진척률'}
+                    {/* centerCode === '20' && ' 하남 진척률' */}
                 </>) : (<>
-                    {centerCode === '10' ? '수지 진척률 ' : '하남 진척률 '}
+                    {/* centerCode === '10' ? '수지 진척률 ' : '하남 진척률 ' */}
                     <span className="text-blue-600">{Math.floor(progress)}%</span>
                 </>)}
             </h2>
