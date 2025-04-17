@@ -8,14 +8,11 @@ function calcColor(value) {
     return "text-2xl max-sm:text-xs text-blue-900";
 }
 // 진척률 그래프 width 용도
-function calcWidth(value) {/*
+function calcWidth(value) {
     if (value === 0) return 0;
     if (value === 100) return "100%";
     return 20 + (value - 1) * (80 / 98) + "%";
-*/
-    alert(value);
-    return "100%";
- }
+}
 
 const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDetailPosition, taskDetailVisible, taskDetailRef, handleTaskDetail }) => {
     return (
@@ -49,7 +46,7 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
                             onMouseLeave={handleTaskDetail(null)}
                         >
                             <span className={calcColor(task.progressRate)}>
-                               {Math.floor(task.progressRate)}%  
+                                {Math.floor(task.progressRate)}%
                             </span>
                             <div className="w-20 bg-gray-300 h-4 rounded-full mb-4 shadow-inner-all-md max-sm:h-2 max-sm:w-full max-sm:mb-1">
                                 <div
@@ -59,6 +56,28 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
                             </div>
                             <span className="w-[115%] text-lg font-gothic text-blue-950 whitespace-normal break-all
                                             text-center overflow-y-hidden text-ellipsis line-clamp-3 max-sm:text-[0.5rem] max-sm:leading-tight">{task.stageName}</span>
+
+                            {/* 말풍선 */}
+                            {taskDetailVisible === task.id && (
+                                <div
+                                    ref={taskDetailRef}
+                                    className="absolute transform -translate-y-full p-4 bg-blue-600 font-gothic text-lg rounded-2xl z-20 shadow-all max-sm:w-[90%] max-sm:text-base"
+                                    style={width >= 640 ? taskDetailPosition : {left: '50%', transform: 'translate(-50%, -100%)'}}
+                                >
+                                    <div className="w-96 max-h-96 pr-4 whitespace-normal overflow-y-scroll space-y-2 max-sm:w-full">
+                                        {taskDetail.map((data, i) => (
+                                            <div
+                                                key={i}
+                                                className={`break-keep leading-tight ${
+                                                    data.isCompleted ? "text-[#4E95D9]" : "text-[#ffff39]"
+                                                }`}
+                                            >
+                                                {data.text}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     ))}
             </div>
