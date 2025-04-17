@@ -46,7 +46,7 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
                             onMouseLeave={handleTaskDetail(null)}
                         >
                             <span className={calcColor(task.progressRate)}>
-                                {Math.floor(task.progressRate)}%
+                               asdfafsd {Math.floor(task.progressRate)}%  afadfadf
                             </span>
                             <div className="w-20 bg-gray-300 h-4 rounded-full mb-4 shadow-inner-all-md max-sm:h-2 max-sm:w-full max-sm:mb-1">
                                 <div
@@ -55,7 +55,7 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
                                 ></div>
                             </div>
                             <span className="w-[115%] text-lg font-gothic text-blue-950 whitespace-normal break-all
-                                            text-center overflow-y-hidden text-ellipsis line-clamp-3 max-sm:text-[0.5rem] max-sm:leading-tight">{task.stageName}</span>
+                                            text-center overflow-y-hidden text-ellipsis line-clamp-3 max-sm:text-[0.5rem] max-sm:leading-tight">{task.stageName} 이름이 뭘까</span>
 
                             {/* 말풍선 */}
                             {taskDetailVisible === task.id && (
