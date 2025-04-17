@@ -12,7 +12,9 @@ function calcWidth(value) {/*
     if (value === 0) return 0;
     if (value === 100) return "100%";
     return 20 + (value - 1) * (80 / 98) + "%";
-*/}
+*/
+    return "100%";
+ }
 
 const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDetailPosition, taskDetailVisible, taskDetailRef, handleTaskDetail }) => {
     return (
@@ -36,7 +38,28 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
                 ></div>
             </div>
             <div className="w-full h-[200px] flex justify-between bg-white shadow-lg px-4 pt-10 box-border rounded-lg gap-4 max-sm:gap-2 max-sm:pt-6 max-sm:pb-2 max-sm:h-auto">
-                
+                {tasks
+                    ?.filter((task) => task.centerCode === centerCode)
+                    .map((task, i) => (
+                        <div
+                            className="flex flex-col items-center w-[10%] font-gothic-bold"
+                            key={i}
+                            onMouseEnter={handleTaskDetail(task.id)}
+                            onMouseLeave={handleTaskDetail(null)}
+                        >
+                            <span className={calcColor(task.progressRate)}>
+                               {Math.floor(task.progressRate)}%  
+                            </span>
+                            <div className="w-20 bg-gray-300 h-4 rounded-full mb-4 shadow-inner-all-md max-sm:h-2 max-sm:w-full max-sm:mb-1">
+                                <div
+                                    className="h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-400"
+                                    style={{ width: calcWidth(task.progressRate) }}
+                                ></div>
+                            </div>
+                            <span className="w-[115%] text-lg font-gothic text-blue-950 whitespace-normal break-all
+                                            text-center overflow-y-hidden text-ellipsis line-clamp-3 max-sm:text-[0.5rem] max-sm:leading-tight">{task.stageName}</span>
+                        </div>
+                    ))}
             </div>
         </div>
     );
