@@ -10,7 +10,7 @@ const QuantityGrid = ({ taskQuantity, vehicleQuantity, equipmentQuantity, transp
     )
 
     return (
-        <div className="w-[37%] h-full flex items-center justify-center text-white max-sm:w-full">
+        <div className="w-[37%] h-[80%] flex items-center justify-center text-white max-sm:w-full">
 
         </div>
     );
