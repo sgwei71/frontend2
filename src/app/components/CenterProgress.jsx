@@ -8,11 +8,11 @@ function calcColor(value) {
     return "text-2xl max-sm:text-xs text-blue-900";
 }
 // 진척률 그래프 width 용도
-function calcWidth(value) {
+function calcWidth(value) {/*
     if (value === 0) return 0;
     if (value === 100) return "100%";
     return 20 + (value - 1) * (80 / 98) + "%";
-}
+*/}
 
 const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDetailPosition, taskDetailVisible, taskDetailRef, handleTaskDetail }) => {
     return (
