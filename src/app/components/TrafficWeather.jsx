@@ -11,7 +11,7 @@ const status2Img = {
 
 const TrafficWeather = ({ trafficInfo, weather }) => {
     return (
-        <div className="w-[37%] h-[50%] flex items-center justify-center text-white">
+        <div className="w-[37%] h-[100%] flex items-center justify-center text-white">
         </div>
     );
 };
