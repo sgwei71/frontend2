@@ -13,6 +13,7 @@ function calcWidth(value) {/*
     if (value === 100) return "100%";
     return 20 + (value - 1) * (80 / 98) + "%";
 */
+    alert(value);
     return "100%";
  }
 
