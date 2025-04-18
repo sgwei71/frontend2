@@ -41,7 +41,6 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
                     ?.filter((task) => task.centerCode === centerCode)
                     .map((task, i) => (
                         <div
-                            {/*className="flex flex-col items-center w-[10%] font-gothic-bold" */}
                             className="flex flex-col items-center w-[30%] font-gothic-bold"
                             key={i}
                             onMouseEnter={handleTaskDetail(task.id)}
