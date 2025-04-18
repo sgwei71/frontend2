@@ -35,12 +35,14 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
                     style={{ width: `${progress}%` }}
                 ></div>
             </div>
-            <div className="w-full h-[200px] flex justify-between bg-white shadow-lg px-4 pt-10 box-border rounded-lg gap-4 max-sm:gap-2 max-sm:pt-6 max-sm:pb-2 max-sm:h-auto">
+           {/* <div className="w-full h-[200px] flex justify-between bg-white shadow-lg px-4 pt-10 box-border rounded-lg gap-4 max-sm:gap-2 max-sm:pt-6 max-sm:pb-2 max-sm:h-auto"> */}
+            <div className="w-full flex flex-col bg-white shadow-lg px-4 pt-10 box-border rounded-lg gap-4 max-sm:gap-2 max-sm:pt-6 max-sm:pb-2 max-sm:h-auto">   
                 {tasks
                     ?.filter((task) => task.centerCode === centerCode)
                     .map((task, i) => (
                         <div
-                            className="flex flex-col items-center w-[10%] font-gothic-bold"
+                            {/*className="flex flex-col items-center w-[10%] font-gothic-bold" */}
+                            className="flex flex-col items-center w-[30%] font-gothic-bold"
                             key={i}
                             onMouseEnter={handleTaskDetail(task.id)}
                             onMouseLeave={handleTaskDetail(null)}
