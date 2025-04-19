@@ -16,7 +16,7 @@ function calcWidth(value) {
 
 const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDetailPosition, taskDetailVisible, taskDetailRef, handleTaskDetail }) => {
     return (
-        <div className={"w-[50%] flex flex-col flex-grow h-full items-center rounded-lg p-4 max-sm:w-full max-sm:p-2 max-sm:my-1"}>
+        <div className={"w-[30%] flex flex-col flex-grow h-full items-center rounded-lg p-4 max-sm:w-full max-sm:p-2 max-sm:my-1"}>
             <h2 className={`text-blue-900 text-4xl font-gothic-bold mb-4 self-start w-full max-sm:text-xl max-sm:mb-1 ${centerCode === '20' && 'sm:text-right'}`}>
                 {/*
                 {width >= 640 ? (<>
@@ -45,9 +45,9 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
       onMouseEnter={handleTaskDetail(task.id)}
       onMouseLeave={handleTaskDetail(null)}
     >
-      <span className="w-[26%] truncate text-2xl font-bold max-sm:test-base">{task.stageName}</span>
+      <span className="w-[35%] truncate text-2xl text-black font-bold max-sm:test-base">{task.stageName}</span>
 
-      <div className="w-[60%] bg-gray-300 h-7 my-auto rounded-full shadow-inner-all-md max-sm:w-full">
+      <div className="w-[45%] bg-gray-300 h-7 my-auto rounded-full shadow-inner-all-md max-sm:w-full">
         <div
           className="h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-400"
           style={{ width: calcWidth(task.progressRate) }}

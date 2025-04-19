@@ -2,7 +2,7 @@ import CircularProgress from "./CircularProgress";
 
 const EntireProgress = ({ progress1, progress2, overallStatus }) => {
     return (
-        <div className="w-[30%] h-[820px] flex flex-col items-center bg-blue-400 rounded-tl-2xl rounded-tr-2xl border-t-2 border-x-2 border-white
+        <div className="w-[20%] h-[820px] flex flex-col items-center bg-blue-400 rounded-tl-2xl rounded-tr-2xl border-t-2 border-x-2 border-white
                         max-sm:w-[350px] max-sm:h-[115%]">
             <div className="text-blue-950 text-6xl leading-tight font-gothic-bold mt-8 mb-6 max-sm:text-5xl max-sm:mb-4">
                 전체 진척률
