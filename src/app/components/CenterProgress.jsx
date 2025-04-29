@@ -47,7 +47,7 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
     >
       <span className="w-[35%] max-sm:w-[50%] truncate text-2xl text-black font-bold max-sm:text-base">{task.stageName}</span>
 
-      <div className="w-[45%] max-sm:w-[40%] bg-gray-300 h-7 my-auto rounded-full shadow-inner-all-md ">
+      <div className="w-[45%] max-sm:w-[35%] bg-gray-300 h-7 my-auto rounded-full shadow-inner-all-md ">
         <div
           className="h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-400"
           style={{ width: calcWidth(task.progressRate) }}
