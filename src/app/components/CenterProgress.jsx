@@ -35,7 +35,7 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
                     style={{ width: `${progress}%` }}
                 ></div>
             </div>
-            <div className="w-full flex flex-col min-h-[750px] justify-start bg-white shadow-lg px-4 pt-4 box-border rounded-lg gap-4 max-sm:gap-2 max-sm:pt-4 max-sm:pb-2">
+            <div className="w-full flex flex-col min-h-[750px] max-sm:min-h-[500px] justify-start bg-white shadow-lg px-4 pt-4 box-border rounded-lg gap-4 max-sm:gap-2 max-sm:pt-4 max-sm:pb-2">
             {tasks
   ?.filter((task) => task.centerCode === centerCode)
   .map((task, i) => (
@@ -45,9 +45,10 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
       onMouseEnter={handleTaskDetail(task.id)}
       onMouseLeave={handleTaskDetail(null)}
     >
-      <span className="w-[26%] truncate text-2xl font-bold max-sm:test-base">{task.stageName}</span>
 
-      <div className="w-[60%] bg-gray-300 h-7 my-auto rounded-full shadow-inner-all-md max-sm:w-full">
+      <span className="w-[26%] max-sm:w-[40%] truncate text-2xl font-bold max-sm:text-base">{task.stageName}</span>
+
+      <div className="w-[60%] max-sm:w-[40%] bg-gray-300 h-7 my-auto rounded-full shadow-inner-all-md">
         <div
           className="h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-400"
           style={{ width: calcWidth(task.progressRate) }}
