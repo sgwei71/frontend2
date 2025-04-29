@@ -53,9 +53,9 @@ const CenterProgress = ({ width, centerCode, progress, tasks, taskDetail, taskDe
           style={{ width: calcWidth(task.progressRate) }}
         ></div>
       </div>
-
-      <span className={calcColor(task.progressRate)}>{Math.floor(task.progressRate)}%</span>
-
+      <div className="w-[20%] max-sm:w-[15%]">
+        <span className={calcColor(task.progressRate)}>{Math.floor(task.progressRate)}%</span>
+      </div>
       {/* 말풍선 */}
       {taskDetailVisible === task.id && (
         <div

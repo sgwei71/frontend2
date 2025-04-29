@@ -33,8 +33,8 @@ const CircularProgress = ({ value, state }) => {
                 </defs>
             </svg>
             <div className="absolute flex flex-col justify-center items-center pt-2">
-                <div className={`text-[6.9rem] font-gothic-bold text-shadow-md leading-none max-sm:text-[4.5rem] ${colors[state][2]}`}>
-                    {Math.floor(value * 100)}<span className="text-6xl max-sm:text-4xl">%</span>
+                <div className={`text-[5.5rem] font-gothic-bold text-shadow-md leading-none max-sm:text-[4.5rem] ${colors[state][2]}`}>
+                    {Math.floor(value * 100)}<span className="text-5xl max-sm:text-4xl">%</span>
                 </div>
                 <div className="text-[4rem] text-gray-600 font-gothic-bold leading-none max-sm:text-[3.8rem]">{state}</div>
             </div>
