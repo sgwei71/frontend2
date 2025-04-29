@@ -314,7 +314,7 @@ export default function Home() {
                     <div className="flex bg-gray-600 shadow-top-down font-gothic min-h-48 pt-[5.5rem]">
                         <Notice data={notices} currentIndex={currentNoticeIndex} />
                     </div>
-                    {/* 
+                     {/* 
                     <div className="bg-blue-950 w-full flex justify-center items-center">
                         <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} />
                     </div>
@@ -327,7 +327,7 @@ export default function Home() {
             )}
 
             {/* 하단 진척률 row */}
-            <div className={`flex justify-between px-10 pt-12 pb-24 items-stretch font-gothic bg-[#e5e7eb] max-sm:px-1 max-sm:pt-0 max-sm:pb-6 ${width < 640 ? 'hidden' : ''}`}></div>
+            
             <div
                 className='flex justify-between px-10 pt-12 pb-24 items-stretch font-gothic bg-[#e5e7eb] max-sm:px-1 max-sm:pt-0 max-sm:pb-6 max-sm:flex-col max-sm:items-start'
                 style={{
