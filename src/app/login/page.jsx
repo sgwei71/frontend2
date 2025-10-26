@@ -56,7 +56,7 @@ export default function Login() {
         <div className="w-screen">
             <div className="flex justify-center items-center h-screen bg-blue-500 overflow-x-auto">
                 <form className="bg-white shadow-md rounded-lg p-8 w-96 max-sm:w-[90%]">
-                    <h2 className="text-2xl font-semibold text-center mb-6 text-black">IBK 하남 데이터센터 이전</h2>
+                    <h2 className="text-2xl font-semibold text-center mb-6 text-black">IBK그룹사 하남데이터센터 이전</h2>
                     {/* 아이디 입력 필드 */}
                     <input
                         type="text"
