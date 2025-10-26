@@ -5,7 +5,7 @@ import axios from "axios";
 // import { tokenRefresh } from "./member";
 
 // const API_URL = process.env.NEXT_PUBLIC_API_URL;
-export const API_URL = "http://211.188.58.114:8080"; // http://localhost:8888
+export const API_URL = "http://211.188.55.221:8080"; // http://localhost:8888
 
 export const axiosInstance = axios.create({
     baseURL: API_URL,
