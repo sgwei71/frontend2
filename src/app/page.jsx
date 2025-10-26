@@ -280,24 +280,12 @@ export default function Home() {
                 // DESKTOP
                 <>
                     {/* 전체 진척률 row */}
-                    {/*
                     <div className="bg-blue-950 w-full flex items-end overflow-visible">
-                    */}
-                    {/*  
-                    <div className="bg-blue-950 w-full h-[40%] flex items-end overflow-visible">
-
-                        <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} />
-
-                        <EntireProgress progress1={progress1} progress2={progress2} overallStatus={overallStatus} />
-
-                        <TrafficWeather trafficInfo={trafficInfo} weather={weather} />
-
                         <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} />
                         <EntireProgress progress1={progress1} progress2={progress2} overallStatus={overallStatus} />
                         <TrafficWeather trafficInfo={trafficInfo} weather={weather} />
-                       
                     </div>
-                   */}
+
                     {/* 공지/이슈 row */}
                     <div className="flex justify-between px-20 items-center min-h-28 bg-gray-600 shadow-top-down font-gothic">
                         <Notice data={notices} currentIndex={currentNoticeIndex} />
@@ -310,26 +298,21 @@ export default function Home() {
                     <div className="bg-blue-950 w-full flex items-end overflow-visible justify-center min-h-72 px-2">
                         <EntireProgress progress1={progress1} progress2={progress2} overallStatus={overallStatus} />
                     </div>
-
                     <div className="flex bg-gray-600 shadow-top-down font-gothic min-h-48 pt-[5.5rem]">
                         <Notice data={notices} currentIndex={currentNoticeIndex} />
                     </div>
-                     {/* 
                     <div className="bg-blue-950 w-full flex justify-center items-center">
                         <QuantityGrid taskQuantity={taskQuantity} vehicleQuantity={vehicleQuantity} equipmentQuantity={equipmentQuantity} transportRoute={transportRoute} />
                     </div>
-  
                     <div className="flex bg-gray-600 shadow-top-down font-gothic min-h-28 px-2">
                         <Notice data={issues} currentIndex={currentIssueIndex} />
                     </div>
-                    */}
                 </>
             )}
 
             {/* 하단 진척률 row */}
-            
             <div
-                className='flex justify-between px-10 pt-12 pb-24 items-stretch font-gothic bg-[#e5e7eb] max-sm:px-1 max-sm:pt-0 max-sm:pb-6 max-sm:flex-col max-sm:items-start'
+                className='flex justify-between px-10 pt-12 pb-24 items-center font-gothic bg-[#e5e7eb] max-sm:px-1 max-sm:pt-0 max-sm:pb-6 max-sm:flex-col max-sm:items-start'
                 style={{
                     backgroundImage:
                         width >= 640 ?
@@ -348,9 +331,6 @@ export default function Home() {
                     taskDetailRef={taskDetailRef}
                     handleTaskDetail={handleTaskDetail}
                 />
-                {width >= 640 && (
-                    <EntireProgress progress1={progress1} progress2={progress2} overallStatus={overallStatus} />
-                )}
                 {/* 하남 진척률 */}
                 <CenterProgress
                     width={width}
