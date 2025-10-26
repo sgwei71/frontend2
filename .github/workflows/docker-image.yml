@@ -43,7 +43,7 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
-          port: 1022
+          # port: 1022
           script: |
             # 최신 Docker 이미지를 미리 서버에 가져옵니다.
             docker pull ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend2:latest
