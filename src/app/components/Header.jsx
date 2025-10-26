@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 // import useIsAdminStore from "@/utils/store/isAdminStore";
 
 const Header = () => {
-    // const isAdmin = useIsAdminStore((state) => state.isAdmin);
+    // const isAdmin = useIsAdminStore((state) => state.isAdmin); //imsi
     const router = useRouter();
 
     const [payLoad, setPayLoad] = useState(null);
