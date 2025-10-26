@@ -15,8 +15,8 @@ COPY . .
 RUN npm run build
 
 # 애플리케이션이 사용할 포트 노출
-ENV PORT=3002
-EXPOSE 3002
+ENV PORT=3000
+EXPOSE 3000
 
 # Next.js 애플리케이션을 시작
 CMD ["npm", "start"]

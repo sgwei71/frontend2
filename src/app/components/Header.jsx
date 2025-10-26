@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 // import useIsAdminStore from "@/utils/store/isAdminStore";
 
 const Header = () => {
-    // const isAdmin = useIsAdminStore((state) => state.isAdmin); //imsi
+    // const isAdmin = useIsAdminStore((state) => state.isAdmin);
     const router = useRouter();
 
     const [payLoad, setPayLoad] = useState(null);
@@ -37,10 +37,7 @@ const Header = () => {
 
     const getRoundList = async () => {
         const res = await getRound();
-        const defaultItem = res.find((item) => item["round"] == 80);
-        {/* const defaultItem = res.find((item) => item["default"] == true); */}
-        const { round } = defaultItem;
-
+        const { round } = res.find((item) => item["default"] === true);
         setRoundList(res);
         setRoundId(round);
         roundIdCookie.set(round);
