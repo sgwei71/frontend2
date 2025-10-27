@@ -61,7 +61,7 @@ const Header = () => {
             {/* 좌측 */}
             <div className="flex items-center space-x-4 w-full sm:w-auto sm:space-x-8">
                 <Link href="/" passHref className="flex items-center space-x-2">
-                    <img src="/logo.png" alt="Logo" className="h-6 sm:h-10 pb-1" /> {/* 로고 이미지 */}
+                    <img src="/logo2.jpg" alt="Logo" className="h-6 sm:h-10 pb-1" /> {/* 로고 이미지 */}
                     <h1 className="text-sm sm:text-xl font-bold">이전 프로젝트 관리시스템</h1>
                 </Link>
                 <FormControl>
