@@ -30,7 +30,7 @@ export default function Home() {
     const [time, setTime] = useState(null);
     const roundId = useRoundIdStore((state) => state.roundId);
 
-    //대시보드 데이터
+    //대시보드 데이터2
     const [taskQuantity, setTaskQuantity] = useState(0);
     const [vehicleQuantity, setVehicleQuantity] = useState(0);
     const [equipmentQuantity, setEquipmentQuantity] = useState(0);
