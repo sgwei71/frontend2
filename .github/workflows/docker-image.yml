@@ -65,7 +65,7 @@ jobs:
               --ulimit nofile=65535:65535 \
               --ulimit nproc=65535 \
               --memory=256g \
-              --cpus="1.5" \
+              --cpus="1" \
               ${{ secrets.DOCKER_USERNAME }}/dashboard_frontend2:latest
             
             # 사용하지 않는 Docker 이미지 제거
