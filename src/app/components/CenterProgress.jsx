@@ -7,7 +7,7 @@ function calcColor(value) {
     if (value < 100) return "text-2xl max-sm:text-xs text-blue-700";
     return "text-2xl max-sm:text-xs text-blue-900";
 }
-// 진척률 그래프 width 용도
+// 진척률 그래프 width 용도 hacking
 function calcWidth(value) {
     if (value === 0) return 0;
     if (value === 100) return "100%";
