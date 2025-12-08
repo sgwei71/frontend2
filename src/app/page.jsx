@@ -20,7 +20,7 @@ import TrafficWeather from "./components/TrafficWeather";
 import Notice from "./components/Notice";
 import CenterProgress from "./components/CenterProgress";
 
-const socket = io(API_URL); // http://117.52.84.61:8080  http://localhost:8888
+const socket = io(API_URL); // http://117.52.84.61:8080  http://localhost:8888 imsi
 
 export default function Home() {
     const queryClient = useQueryClient();
